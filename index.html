@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080b12">
+  <title>Quem é o GOAT?</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+
+  <main class="page">
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="GOAT debate">
+        <span class="brand-mark">G</span>
+        <span>GOAT<span class="brand-dot">.</span>DEBATE</span>
+      </a>
+      <span class="status"><i></i> DEBATE ABERTO</span>
+    </header>
+
+    <section class="intro">
+      <p class="eyebrow">O MAIOR DE TODOS OS TEMPOS</p>
+      <h1>Quem é <span>GOAT</span> <span class="goat">🐐</span>?</h1>
+      <p class="subtitle">Dois gigantes. Uma escolha. Qual lenda merece o seu voto?</p>
+    </section>
+
+    <section class="players" aria-label="Escolha seu jogador">
+      <article class="player-card messi-card">
+        <div class="player-number">10</div>
+        <div class="player-image-wrap">
+          <img
+            src="https://commons.wikimedia.org/wiki/Special:FilePath/Lionel_Messi_20180626.jpg"
+            alt="Lionel Messi"
+            class="player-image"
+            onerror="this.src='https://images.unsplash.com/photo-1522778119026-d647f0596c20?auto=format&fit=crop&w=900&q=85'">
+        </div>
+        <div class="player-info">
+          <span class="player-country">ARGENTINA · 10</span>
+          <h2>MESSI</h2>
+          <p>Visão, controle e genialidade.</p>
+          <button class="vote-button messi-button" data-player="messi">
+            Escolher Messi <span>↗</span>
+          </button>
+        </div>
+      </article>
+
+      <div class="versus"><span>VS</span></div>
+
+      <article class="player-card ronaldo-card">
+        <div class="player-number">7</div>
+        <div class="player-image-wrap">
+          <img
+            src="https://commons.wikimedia.org/wiki/Special:FilePath/Cristiano_Ronaldo_2018.jpg"
+            alt="Cristiano Ronaldo"
+            class="player-image"
+            onerror="this.src='https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=900&q=85'">
+        </div>
+        <div class="player-info">
+          <span class="player-country">PORTUGAL · 7</span>
+          <h2>CRISTIANO</h2>
+          <p>Força, técnica e mentalidade.</p>
+          <button class="vote-button ronaldo-button" data-player="ronaldo">
+            Escolher CR7 <span>↗</span>
+          </button>
+        </div>
+      </article>
+    </section>
+
+    <section class="result hidden" id="result" aria-live="polite">
+      <div class="result-topline">SEU VEREDITO</div>
+      <h2 id="result-title">Escolha registrada.</h2>
+      <p id="result-copy"></p>
+      <a id="video-link" class="watch-button" href="#" target="_blank" rel="noopener noreferrer">
+        Assistir ao vídeo <span>↗</span>
+      </a>
+      <button class="reset-button" id="reset-button">Votar novamente</button>
+    </section>
+
+    <footer>
+      <span>FEITO PARA OS AMANTES DO FUTEBOL</span>
+      <span>© <span id="year"></span> GOAT DEBATE</span>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
