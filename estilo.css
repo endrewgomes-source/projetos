@@ -1,0 +1,11 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: black;
+    color: goldenrod;
+}
+.tudo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
